@@ -4,8 +4,8 @@ This is a set of programs that emulate some of the functions of a search engine.
 
 http://sqlitebrowser.org/
 
--> This program crawls a web site and pulls a series of pages into the database, recording the links between pages. Enter web url. In this sample run, I told it to crawl a website and retrieve pages. If you restart the program again and tell it to crawl more pages, it will not re-crawl any pages already in the database. Upon restart it goes to a random non-crawled page and starts there. So each successive run of spider.py is additive. You can have multiple starting points in the same database - within the program these are called "webs". The spider chooses randomly amongst all non-visited links across all
-the webs.
+  -> This program crawls a web site and pulls a series of pages into the database, recording the links between pages. Enter web url. In this sample run, I told it to crawl a website and retrieve pages. If you restart the program again and tell it to crawl more pages, it will not re-crawl any pages already in the database. Upon restart it goes to a random non-crawled page and starts there. So each successive run of spider.py is additive. You can have multiple starting points in the same database - within the program these are called "webs". The spider chooses randomly amongst all non-visited links across all
+  the webs.
 
 -> If you want to dump the contents of the spider.sqlite file, you can run spdump.py. This shows the number of incoming links, the old page rank, the new page rank, the id of the page, and the url of the page.  The spdump.py program only shows pages that have at least one incoming link to them.
 
